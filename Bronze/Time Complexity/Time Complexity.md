@@ -6,7 +6,11 @@ Time Complexity plays a crucial role in optimizing programs and excelling in pro
 
 ## Notations
 
+### Big \Theta Notation
+
 ### Big O Notation
 
-Big O notation is a standardized way of expressing the worst-case time complexity of an algorithm. It quantifies how the runtime of an algorithm scales as the size of the input, denoted as 'n,' becomes arbitrarily large. The Big O notation provides an upper bound on the running time, helping us understand how an algorithm's efficiency degrades with larger input sizes.
+Big O notation is a standardized way of expressing the worst-case time complexity of an algorithm. It quantifies how an algorithm's runtime scales as the input size, denoted as 'n,' becomes arbitrarily large. The Big O notation provides an upper bound on the running time, helping us understand how an algorithm's efficiency degrades with larger input sizes.
+
+
 
