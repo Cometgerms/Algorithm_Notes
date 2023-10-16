@@ -76,5 +76,3 @@ $`\exists c,\, n_0: \space \forall n\, \geq \, n_0, 0 \leq c\cdot g(n)\leq f(n)`
 - $f(n) \times g(n) = O(f(n) \times g(n))$
 - $c \cdot f(n) = O(f(n))$
 - If $g(n) = O(f(n))$, then $f(n) + g(n) = O(f(n))$
-
-
