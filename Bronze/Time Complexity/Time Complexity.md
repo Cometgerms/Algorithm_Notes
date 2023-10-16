@@ -23,8 +23,9 @@ For function $f(n)$ and $g(n)$, we say $f(n) = \Theta(g(n))$ if and only if:
 
 $`\exists c_1,\space c_2, \space n_0: \space \forall n \, \geq  \, n_0, \space 0\leq c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n)`$
 
-![Big Theta Notation](/Bronze/Time%20Complexity/images/Time_Complexity _Theta.png)
-
+<div style="text-align:center">
+  <img src="./images/Time_Complexity%20_Theta.png" alt="Big Theta Notation" width="25%">
+</div>
 
 ### Big O Notation
 
@@ -34,7 +35,10 @@ For function $f(n)$ and $g(n)$, we say $f(n) = O(g(n))$ if and only if:
 
 $`\exists c, \, n_0:\space \forall n \geq n_0,\, 0\leq f(n) \leq c\cdot g(n)`$
 
-![Big O Notation](/Bronze/Time%20Complexity/images/Time_Complexity_O)
+<div style="text-align:center">
+  <img src="./images/Time_Complexity%20_Theta.png" alt="Big O Notation" width="25%">
+</div>
+
 
 Fun fact: the reason we use big O notations rather than big $\Theta$ notation is that, firstly, sometimes, we can only define a function's upper bound, but we can not prove its lower bound. (That is why Big $\Theta$ notation is more accurate than big Os) Secondly, it is way much easier to type O rather than $\Theta$.
 
