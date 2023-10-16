@@ -36,7 +36,7 @@ For function $f(n)$ and $g(n)$, we say $f(n) = O(g(n))$ if and only if:
 $`\exists c, \, n_0:\space \forall n \geq n_0,\, 0\leq f(n) \leq c\cdot g(n)`$
 
 <div style="text-align:center">
-  <img src="./images/Time_Complexity%20_Theta.png" alt="Big O Notation" width="25%">
+  <img src="./images/Time_Complexity_O.png" alt="Big O Notation" width="25%">
 </div>
 
 
@@ -50,8 +50,9 @@ For function $f(n)$ and $g(n)$, we say $f(n) = \Omega (g(n))$ if and only if:
 
 $`\exists c,\, n_0: \space \forall n\, \geq \, n_0, 0 \leq c\cdot g(n)\leq f(n)`$
 
-![Big $`\Omega`$ Notation](/Bronze/Time%20Complexity/images/Time_Complexity_Omega)
-
+<div style="text-align:center">
+  <img src="./images/Time_Complexity_Omega.png" alt="Big O Notation" width="25%">
+</div>
 ### Laws of Asymptotic Notation
 
 #### Transitivity
