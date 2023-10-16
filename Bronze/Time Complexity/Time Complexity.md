@@ -23,7 +23,7 @@ For function $f(n)$ and $g(n)$, we say $f(n) = \Theta(g(n))$ if and only if:
 
 $`\exists c_1,\space c_2, \space n_0: \space \forall n \, \geq  \, n_0, \space 0\leq c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n)`$
 
-![Big Theta Notation](/Bronze/Time%20Complexity/images/Time_Complexity_Theta.png)
+![Big Theta Notation](/Bronze/Time%20Complexity/images/Time_Complexity _Theta.png)
 
 
 ### Big O Notation
