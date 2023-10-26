@@ -42,7 +42,7 @@ $`\exists c, \, n_0:\space \forall n \geq n_0,\, 0\leq f(n) \leq c\cdot g(n)`$
 
 Fun fact: the reason we use big O notations rather than big $\Theta$ notation is that, firstly, sometimes, we can only define a function's upper bound, but we can not prove its lower bound. (That is why Big $\Theta$ notation is more accurate than big Os) Secondly, it is way much easier to type O rather than $\Theta$.
 
-### Big $\Omega$ Notation
+### Big $`\Omega`$ Notation
 
 We have $\Theta$ for the upper and lower bound and O for the upper bound. Therefore, $\Omega$ is for the lower bound! The mathematical definition of Big $\Omega$ notations:
 
@@ -53,6 +53,7 @@ $`\exists c,\, n_0: \space \forall n\, \geq \, n_0, 0 \leq c\cdot g(n)\leq f(n)`
 <div style="text-align:center">
   <img src="./images/Time_Complexity_Omega.png" alt="Big O Notation" width="25%">
 </div>
+
 ### Laws of Asymptotic Notation
 
 #### Transitivity
