@@ -127,21 +127,31 @@ struct BinarySearchTree{
                      (node->right ? node->right->size : 0) + node->count;
         return temp;
     }
-    //bfs
-    void bfs() {
-        queue<TreeNode<T>*> q;
-        q.push(root);
-        while (!q.empty()) {
-            TreeNode<T>* node = q.front();
-            q.pop();
-            cout << node->key << " ";
-            if (node->left != nullptr) q.push(node->left);
-            if (node->right != nullptr) q.push(node->right);
-        }
-        EDL;
+    //inorder traversal
+    void inorder(TreeNode<T>* node) {
+        if (node == nullptr) return;
+        inorder(node->left);
+        cout << node->key << " ";
+        inorder(node->right);
     }
 
+    //bfs
+    void bfs(TreeNode<T>* node) {
+        if (node == nullptr) return;
+        queue<TreeNode<T>*> q;
+        q.push(node);
+        while (!q.empty()) {
+            TreeNode<T>* temp = q.front();
+            q.pop();
+            cout << temp->key << " ";
+            if (temp->left != nullptr) q.push(temp->left);
+            if (temp->right != nullptr) q.push(temp->right);
+        }
+    }
 };
+
+
+
 
 int main(){
     makeIO;
@@ -151,19 +161,21 @@ int main(){
     bst.init();
 
     //insert test data
-    int data[4] = {5, 2, 8, 3};
-    FOR(i, 0, 4){
+    int n = 7; // increase constraints
+    int data[] = {5, 2, 8, 3, 6, 10, 34};
+
+    FOR(i, 0, n){
         bst.insert(data[i]);
     }
 
     //search for rank
-    FOR(i, 0, 4){
+    FOR(i, 0, n){
         cout<<"Rank of "<<data[i]<<": "<<bst.queryRank(bst.root, data[i])<<endl;
     }
     EDL;
 
     //search for kth rank
-    FORE(i, 1, 4){
+    FORE(i, 1, n){
         cout<<"Element with rank "<<i<<": "<<bst.querykth(bst.root, i)<<endl;
     }
     EDL;
@@ -172,7 +184,7 @@ int main(){
     bst.remove(3);
 
     //search for rank again
-    FOR(i, 0, 4){
+    FOR(i, 0, n){
         cout<<"Rank of "<<data[i]<<": "<<bst.queryRank(bst.root, data[i])<<endl;
     }
     EDL;
@@ -184,12 +196,14 @@ int main(){
     //find max node
     cout<<"Max node: "<<bst.findMaxNode(bst.root)->key<<endl;
 
-    //bfs
-    bst.bfs();
+    //inorder traversal of bst
+    bst.inorder(bst.root), EDL;
+
+
 
     //left rotate
     bst.root = bst.leftRotate(bst.root);
-    bst.bfs();
+    bst.inorder(bst.root), EDL;
     return 0;
 }
 
