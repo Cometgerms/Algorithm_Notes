@@ -27,3 +27,8 @@ This scalar is crucial for determining the orientation of three points (say A, B
 
 In the context of computing the Convex Hull, the cross product helps in identifying the outermost points that form the "hull" of a set of points. By iterating over points and using the cross product to check turns at each step, algorithms can effectively "wrap" around the set of points, much like stretching a rubber band around them. This simple yet powerful application of the cross product is what makes it indispensable in computational geometry.
 
+## Determine whether the line segments are turning left or right
+Our next problem that need to be considered is how to determine whether the line segments are turning left or right, which is two continuous line segment $'\overrightarrow{\rm p_1p_2}'$' . I would state that this section contains that most essential idea of the Convex Hull problem , since we need to determine whether the line segments are turning left or right in order to determine whether the line segments are convex or not. 
+Utilizing cross product can avoid the calculation of the angle between line segments. What all we need to do is to determine whether the next line segment locates clockwise or anti-clockwise to the previous line segment. We calculate the cross product:
+$$(p_2-p_0) \times (p_1-p_0)$$
+If the result is positive, then the line segments are turning clockwise at $'p_1'$, which is right; otherwise, the line segments are turning left.
