@@ -32,3 +32,12 @@ Our next problem that need to be considered is how to determine whether the line
 Utilizing cross product can avoid the calculation of the angle between line segments. What all we need to do is to determine whether the next line segment locates clockwise or anti-clockwise to the previous line segment. We calculate the cross product:
 $$(p_2-p_0) \times (p_1-p_0)$$
 If the result is positive, then the line segments are turning clockwise at $'p_1'$, which is right; otherwise, the line segments are turning left.
+
+## Search for convex hull
+The convex hull of a point set **Q** is a convex polygon **P** such that each point in **Q** is either on the boundary of **P** or in its interior. If we imagine all the points in the set **Q** as a pin, thus, the convex hull is a tensed rubber band that wraps all the pins. The image below shows an example of the convex hull:
+<div style="text-align:center">
+  <img src="./images/example.png" alt="Big Theta Notation" width="25%">
+    <figcaption>Caption: Cross product vector.</figcaption>
+</div>
+
+We are going to dig into one of the most common used algorithm for locates the convex hull, known as Graham's scan, with time complexity of _O(n log n)_ .
