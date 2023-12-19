@@ -127,12 +127,12 @@ struct BinarySearchTree{
                      (node->right ? node->right->size : 0) + node->count;
         return temp;
     }
-    //inorder traversal
-    void inorder(TreeNode<T>* node) {
+    //traverse traversal
+    void traverse(TreeNode<T>* node) {
         if (node == nullptr) return;
-        inorder(node->left);
+        traverse(node->left);
         cout << node->key << " ";
-        inorder(node->right);
+        traverse(node->right);
     }
 
     //bfs
@@ -148,8 +148,19 @@ struct BinarySearchTree{
             if (temp->right != nullptr) q.push(temp->right);
         }
     }
-};
 
+    //determine the validation of bst
+    bool isValidBST(TreeNode<T>* node) {
+        return isValidBST(node, nullptr, nullptr);
+    }
+
+    bool isValidBST(TreeNode<T>* node, TreeNode<T>* minNode, TreeNode<T>* maxNode) {
+        if (node == nullptr) return true;
+        if (minNode != nullptr && node->key <= minNode->key) return false;
+        if (maxNode != nullptr && node->key >= maxNode->key) return false;
+        return isValidBST(node->left, minNode, node) && isValidBST(node->right, node, maxNode);
+    }
+};
 
 
 
@@ -167,6 +178,9 @@ int main(){
     FOR(i, 0, n){
         bst.insert(data[i]);
     }
+
+    //first determine the validation of bst
+    cout<<"Validation of this bst: "<<bst.isValidBST(bst.root)<<endl;
 
     //search for rank
     FOR(i, 0, n){
@@ -196,14 +210,12 @@ int main(){
     //find max node
     cout<<"Max node: "<<bst.findMaxNode(bst.root)->key<<endl;
 
-    //inorder traversal of bst
-    bst.inorder(bst.root), EDL;
-
-
+    //traverse traversal of bst
+    bst.traverse(bst.root), EDL;
 
     //left rotate
     bst.root = bst.leftRotate(bst.root);
-    bst.inorder(bst.root), EDL;
+    bst.traverse(bst.root), EDL;
     return 0;
 }
 
