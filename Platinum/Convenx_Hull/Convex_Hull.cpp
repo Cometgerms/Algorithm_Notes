@@ -1,3 +1,8 @@
+/*
+ * Created by Cometgerms
+ * This code is a demonstration of an easy Convex Hull problem, solved by using C++.
+ * The main function demonstrates the functionalities.
+ */
 #include<bits/stdc++.h>
 using namespace std;
 #define makeIO ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);

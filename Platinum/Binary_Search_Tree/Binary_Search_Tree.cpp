@@ -1,3 +1,9 @@
+/*
+ * Created by Cometgerms
+ * This C++ program implements a Binary Search Tree (BST) with advanced features. It includes functionality for inserting and removing elements, querying the rank of elements, finding the k-th smallest element, and determining the validity of the BST.
+ * Additionally, the BST nodes track the size of the subtree rooted at them and the count of occurrences of each element.
+ * The main function demonstrates these functionalities with a test case.
+ */
 #include<bits/stdc++.h>
 using namespace std;
 #define makeIO ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
