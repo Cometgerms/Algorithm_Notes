@@ -12,5 +12,5 @@ As my primary focus is competing in the USA Computing Olympics (USACO) using C++
 - [USACO Guide](https://usaco.guide/)
 - [OI Wiki](https://oi-wiki.org/)
 - Cormen, Thomas H., et al. Introduction to Algorithms. 3rd ed., MIT Press, 2009.
-- Fu Donglai. Labuladong's Algorithm Cheatsheet. Electronic Industry Press, December 2020. ISBN: 9787121399336
+- Fu Donglai. Labuladong's Algorithm Cheatsheet. Electronic Industry Press, December 2020. ISBN: 9787121399336.
 - 
