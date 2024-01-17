@@ -1,5 +1,5 @@
 # Binary Search Algorithm
-
+[![Binary_Search](https://tenor.com/view/binary-search-sequence-search-gif-20595028)](https://media1.tenor.com/m/Jl0YrqxnHmAAAAAd/binary-search-sequence-search.gif)
 ## Overview
 The Binary Search algorithm is an efficient method for finding an element within a sorted array. This algorithm repeatedly divides the search interval in half, beginning with the middle element of the array. If the middle element does not match the target value, the algorithm eliminates the half in which the target cannot lie and continues in the remaining half, repeating this process until the target value is found or the search space is reduced to zero.
 
