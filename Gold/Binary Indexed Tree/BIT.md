@@ -26,4 +26,4 @@ This approach is efficient for sum queries but linear-time for single updates. I
    - When $idx = 11$ (binary $1011$), with $r = 0$, $tree[11] = f[11]$.
    - When $idx = 12$ (binary $1100$), with $r = 2$, $tree[12] = f[9] + f[10] + f[11] + f[12]$.
    - When $idx = 14$ (binary $1110$), with $r = 1$, $tree[14] = f[13] + f[14]$.
-3. With the $tree$ array, we can deduce that $C[13] = tree[13] + tree[12] + tree[8]$. An important conclusion is that the number of $1$s in the binary representation of $idx$ equals the number of subsequences that constitute $C[idx]$, or the number of elements in $tree$ that sum up to it.
+3. With the $tree$ array, we can deduce that $C[13] = tree[13] + tree[12] + tree[8]$. An important conclusion is that the number of _1_ s in the binary representation of $idx$ equals the number of subsequences that constitute $C[idx]$, or the number of elements in $tree$ that sum up to it.
