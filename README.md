@@ -2,6 +2,7 @@
 ![Algo](https://media1.tenor.com/m/Qz2VqMX0MisAAAAC/just-blame-on-the-algorithm.gif)
 
 ~~This will be a hair-pulling repo (literally)~~.
+
 ## Introduction
 Welcome to the "Algorithm_Notes" repository!
 This repository is my personal space where I organize and share the algorithms I've learned and am exploring. It's created as a helpful resource for anyone interested in algorithms, whether you're just starting out or looking for more advanced topics. Here, you'll find a range of algorithms, from basic to complex, along with explanations and examples. It's a place for learning, discovery, and perhaps even a bit of inspiration for your own coding journey. So, if you're in front of your screen wondering about algorithms, this is the right spot for you!
