@@ -110,7 +110,6 @@ public:
  * Graham Scan Algorithm
  * O(nlogn)
  */
-
 int main(){
     makeIO;
     cin >> n;
