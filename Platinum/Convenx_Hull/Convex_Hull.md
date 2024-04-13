@@ -4,7 +4,7 @@
 
 ### Definition and Formula
 
-The cross product is a binary operation on two vectors in three-dimensional space. Given two vectors **A** = \(A_x, A_y, A_z\) and **B** = \(B_x, B_y, B_z\), their cross product **A × B** is defined as:
+The cross-product is a binary operation on two vectors in three-dimensional space. Given two vectors **A** = \(A_x, A_y, A_z\) and **B** = \(B_x, B_y, B_z\), their cross product **A × B** is defined as:
 
 $$ \mathbf{A} \times \mathbf{B} = (A_{y}B_{z} - A_{z}B_{y}, A_{z}B_{x} - A_{x}B_{z}, A_{x}B_{y} - A_{y}B_{x}) $$
 
@@ -18,7 +18,7 @@ This results in a new vector that is orthogonal (perpendicular) to both **A** an
 
 ### Application in 2D Computational Geometry
 
-In two-dimensional geometry, especially in algorithms like the Convex Hull, the cross product is often simplified. Considering 2D vectors **A** = \(A_x, A_y\) and **B** = \(B_x, B_y\), the "2D cross product" can be represented as the scalar:
+In two-dimensional geometry, especially in algorithms like the Convex Hull, the cross-product is often simplified. Considering 2D vectors **A** = \(A_x, A_y\) and **B** = \(B_x, B_y\), the "2D cross product" can be represented as the scalar:
 
 $$ \mathbf{A} \times \mathbf{B} = A_{x}B_{y} - A_{y}B_{x} $$
 
@@ -26,7 +26,7 @@ This scalar is crucial for determining the orientation of three points (say A, B
 
 ### Importance in Convex Hull Algorithms
 
-In the context of computing the Convex Hull, the cross product helps in identifying the outermost points that form the "hull" of a set of points. By iterating over points and using the cross product to check turns at each step, algorithms can effectively "wrap" around the set of points, much like stretching a rubber band around them. This simple yet powerful application of the cross product is what makes it indispensable in computational geometry.
+In the context of computing the Convex Hull, the cross product helps identify the outermost points that form the "hull" of a set of points. By iterating over points and using the cross product to check turns at each step, algorithms can effectively "wrap" around the set of points, much like stretching a rubber band around them. This simple yet powerful application of the cross product is what makes it indispensable in computational geometry.
 
 ## Determine whether the line segments are turning left or right
 
